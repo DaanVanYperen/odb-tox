@@ -1,0 +1,7 @@
+/.gradle
+/out
+build
+/gwt/war
+/tox.iws
+/tox.iml
+/tox.ipr

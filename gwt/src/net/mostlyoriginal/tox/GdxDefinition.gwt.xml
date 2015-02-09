@@ -1,0 +1,9 @@
+<module>
+	<inherits name='com.badlogic.gdx.backends.gdx_backends_gwt' />
+    <inherits name='com.artemis.backends.artemis_backends_gwt' />
+	<inherits name='net.mostlyoriginal.tox.ToxGame' />
+    <extend-configuration-property name="artemis.reflect.include" value="net.mostlyoriginal.tox.component" />
+    <extend-configuration-property name="artemis.reflect.include" value="net.mostlyoriginal.tox.system" />
+	<entry-point class='net.mostlyoriginal.tox.client.GwtLauncher' />
+	<set-configuration-property name="gdx.assetpath" value="../android/assets" />
+</module>
