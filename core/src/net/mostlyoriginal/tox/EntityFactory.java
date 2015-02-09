@@ -74,7 +74,7 @@ public class EntityFactory {
     public static Entity createBackgroundTile(int x, int y, String spriteId) {
         Animation component = new Animation(spriteId, Animation.Layer.TILE_BACKGROUND);
         component.frozen = true;
-        component.age = MathUtils.random(0, Tox.resource.get(component.id).animationDuration); // pick a random sprite.
+        component.age = MathUtils.random(0, Tox.resource.get(component.id).getAnimationDuration()); // pick a random sprite.
         return Tox.world
                 .createEntity()
                 .addComponent(new Position(x, y))
