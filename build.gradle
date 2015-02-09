@@ -1,7 +1,10 @@
+println GradleVersion.current().prettyPrint()
+assert gradle.gradleVersion >= "1.10"
+
 buildscript {
 
-    ext.gdxVersion = "1.0-SNAPSHOT"
-    ext.artemisVersion = "0.9"
+    ext.gdxVersion = '1.5.3'
+    ext.artemisVersion = '0.8.1'
 
     repositories {
         maven {
@@ -13,7 +16,7 @@ buildscript {
 
     dependencies {
         classpath 'de.richsource.gradle.plugins:gwt-gradle-plugin:0.3'
-        classpath 'com.android.tools.build:gradle:0.9+'
+        classpath 'com.android.tools.build:gradle:0.7.+'
         classpath 'com.github.jtakakura:gradle-robovm-plugin:0.0.4'
         classpath "com.badlogicgames.gdx:gdx-tools:$gdxVersion"
     }
@@ -113,10 +116,6 @@ project(":ios") {
         roboVMVersion = "0.0.9"
     }
 
-    task wrapper(type: Wrapper) {
-        gradleVersion = '1.9'
-    }
-
     configurations { natives }
 
     dependencies {
@@ -132,4 +131,12 @@ project(":ios") {
 
 tasks.eclipse.doLast {
 	delete ".project"
+}
+
+
+idea {
+    project {
+        jdkName = '1.7'
+        languageLevel = '1.7'
+    }
 }
