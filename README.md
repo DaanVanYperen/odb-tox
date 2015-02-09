@@ -2,7 +2,7 @@ Tox
 ===
 
 #### Summary
-7DRL entry made in 72 hours, strategic dungeon crawler!
+7DRL entry made in 72 hours, strategic dungeon crawler! [Play online](http://ludum.mostlyoriginal.net/game/tox/)
 
 #### Tech
 Running on [LibGDX 1.5.3](https://github.com/libgdx/libgdx) and [Artemis-ODB 1.8.1](https://github.com/junkdog/artemis-odb). 
@@ -25,5 +25,4 @@ so taking them later boosts your chance of survival.
 Items are really valuable, they alter the gameplay in subtle ways. Be smart about the order you pick them up, and try to figure out what the special items do.
 World changes are not just superficial! Keep an eye on what else changes!
 
-Download the game [Ludum Dare page](http://ludum.mostlyoriginal.net/game/tox/)
-or [Play online](http://ludum.mostlyoriginal.net/game/tox/)
+[Play online](http://ludum.mostlyoriginal.net/game/tox/)
